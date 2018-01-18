@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    background: #fbfbfb;
+}
+
+html,
+body {
+    height: 100%
+}
+
+a {
+    &:active,
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        transition: color ease 0.3s;
+    }
+}
+
+ul {
+    padding: 0;
+    margin-bottom: 0;
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+}
+
+textarea,
+input,
+button {
+    outline: none!important
+}
+
+textarea {
+    border-radius: 0.1875rem;
+    resize: none!important
+}
+
+
+
+//margin
+.m-t-5 {
+    margin-top: 0.3125rem!important
+}
+.m-t-8 {
+    margin-top: 0.5rem!important
+}
+.m-t-20 {
+    margin-top: 1.25rem!important
+}
+.m-r-3 {
+    margin-right: 0.1875rem!important
+}
+.m-r-10 {
+    margin-right: 0.625rem!important
+}
+.m-b-40 {
+    margin-bottom: 1.875rem!important
+}
+
+//padding
+.p-20 {
+    padding: 1.25rem!important
+}
+.p-l-15 {
+    padding-left: 0.9375rem!important
+}
+.p-r-15 {
+    padding-right: 0.9375rem!important
+}
+
+//font
+.f-12 {
+    font-size: 0.75rem!important;
+}
+.f-13 {
+    font-size: 0.8125rem!important;
+}
+.f-16 {
+    font-size: 1rem!important;
+}
+.f-18 {
+    font-size: 1.125rem!important;
+}
+.f-22 {
+    font-size: 1.375rem!important;
+}
+.f-bold {
+    font-weight: bold!important;
+}
+
+
+//cursor
+.cursor-pointer {
+    cursor: pointer
+}
+.pointer-events-none {
+    pointer-events: none
+}
+
+//overflow
+.overflow-hidden {
+    overflow: hidden
+}

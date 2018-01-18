@@ -20,9 +20,9 @@ module.exports = {
   // models: {
   //   connection: 'someMongodbServer'
   // }
-  port: 8060,
+  port: 5070,
   paths: {
-    public: __dirname + '/../../dist'
+    public: __dirname + '/../../views'
   },
 
 };

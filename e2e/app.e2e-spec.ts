@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('angular-cli2 App', () => {
+describe('angular-cli-newst App', () => {
   let page: AppPage;
 
   beforeEach(() => {

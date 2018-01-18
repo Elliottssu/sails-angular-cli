@@ -1,16 +1,44 @@
+import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
+//Plugs
+import { CookieModule } from 'ngx-cookie';
+
+//Service
+import { UserApiService, SharedService, UtilService, InterceptService,} from './_services';
+
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { NotFoundComponent } from './_shared';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    CookieModule.forRoot()
   ],
-  providers: [],
+  declarations: [
+    AppComponent,
+    NotFoundComponent,
+  ],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS, //http拦截器
+      useClass: InterceptService,
+      multi: true,
+    },
+    UserApiService,
+    SharedService,
+    UtilService,
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+}

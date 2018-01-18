@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular-cli2"
+    "name": "angular-cli-newst"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "views",
       "assets": [
         "assets",
         "favicon.ico"
@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "style/styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -54,7 +54,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "class": {
       "spec": false
     },

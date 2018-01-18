@@ -1,0 +1,197 @@
+.message-part {
+    position: fixed;
+    height: 2.5rem;
+    width: 15rem;
+    margin-left: -7.5rem;
+    left: 50%;
+    top: 1.25rem;
+    border-radius: 0.25rem;
+    color: #fbf7f7;
+    font-size: 0.875rem;
+    z-index: 1000;
+    &.message-success {
+        background: #40A798;
+        -webkit-animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+        -moz-animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+        -ms-animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+        -o-animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+        animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+    }
+    &.message-error {
+        background: #E75151;
+        -webkit-animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+        -moz-animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+        -ms-animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+        -o-animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+        animation: drop-in-fade-out 3.5s cubic-bezier(.32, 1.75, .65, .91);
+    }
+}
+
+@-webkit-keyframes drop-in-fade-out {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        -webkit-transform: translate3d(0, -200%, 0);
+        -moz-transform: translate3d(0, -200%, 0);
+        -ms-transform: translate3d(0, -200%, 0);
+        -o-transform: translate3d(0, -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
+    12% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        visibility: hidden;
+        -webkit-transform: translate3d(0,  -200%, 0);
+        -moz-transform: translate3d(0,  -200%, 0);
+        -ms-transform: translate3d(0,  -200%, 0);
+        -o-transform: translate3d(0,  -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
+}
+
+@-moz-keyframes drop-in-fade-out {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        -webkit-transform: translate3d(0, -200%, 0);
+        -moz-transform: translate3d(0, -200%, 0);
+        -ms-transform: translate3d(0, -200%, 0);
+        -o-transform: translate3d(0, -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
+    12% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        visibility: hidden;
+        -webkit-transform: translate3d(0,  -200%, 0);
+        -moz-transform: translate3d(0,  -200%, 0);
+        -ms-transform: translate3d(0,  -200%, 0);
+        -o-transform: translate3d(0,  -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
+}
+
+@-o-keyframes drop-in-fade-out {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        -webkit-transform: translate3d(0, -200%, 0);
+        -moz-transform: translate3d(0, -200%, 0);
+        -ms-transform: translate3d(0, -200%, 0);
+        -o-transform: translate3d(0, -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
+    12% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        visibility: hidden;
+        -webkit-transform: translate3d(0,  -200%, 0);
+        -moz-transform: translate3d(0,  -200%, 0);
+        -ms-transform: translate3d(0,  -200%, 0);
+        -o-transform: translate3d(0,  -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
+}
+
+@keyframes drop-in-fade-out {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        -webkit-transform: translate3d(0, -200%, 0);
+        -moz-transform: translate3d(0, -200%, 0);
+        -ms-transform: translate3d(0, -200%, 0);
+        -o-transform: translate3d(0, -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
+    12% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        visibility: hidden;
+        -webkit-transform: translate3d(0,  -200%, 0);
+        -moz-transform: translate3d(0,  -200%, 0);
+        -ms-transform: translate3d(0,  -200%, 0);
+        -o-transform: translate3d(0,  -200%, 0);
+        transform: translate3d(0, -200%, 0);
+    }
+}
+
